@@ -1,0 +1,36 @@
+name: "High Cortisol"
+category: Cryptography
+description: |-
+  <img src="https://media1.tenor.com/m/nHhq9_BZEckAAAAC/agnes-tachyon-uma-musume.gif" alt="gif">
+
+  LowCortisol is a company that provides “secure” data storage
+
+  An individual known as bigyahoo recently leaked admin credentials through OSINT sources
+  username : admin
+  password : lowcortisol
+  
+  author: Auric
+
+connection_info: http://103.185.52.198:61452
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 25
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - PETIR{l0w_c0rt1s0l_c1ph3r}
+
+tags:
+  - easy
+
+# files:
+#   - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

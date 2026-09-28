@@ -1,0 +1,11 @@
+services:
+  worldendblackbox:
+    image: worldendblackbox
+    build: .
+    restart: always
+    mem_limit: 128m
+    cpus: 0.25
+    environment:
+      - TERM=xterm
+    ports:
+      - "11671:3134"

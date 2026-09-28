@@ -1,0 +1,33 @@
+name: "Aurichia-Docs"
+category: Cryptography
+description: |-
+
+  I created a simple docs so that people can learn 
+  and also create accounts safely! Even if you share your
+  password my super duper encryption cant be broken!
+
+  Author: Auric
+
+connection_info: nc 46.202.163.245 16961
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - CSC{https://youtu.be/_-2dIuV34cs?si=hN4Ho2KEyeixeLrR}
+
+tags:
+  - easy
+
+files:
+ - dist/server.py
+
+state: visible
+
+version: "0.1"

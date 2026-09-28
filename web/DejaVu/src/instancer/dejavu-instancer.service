@@ -1,0 +1,15 @@
+[Unit]
+Description=DejaVu CTF challenge instancer
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/ctf/DejaVu/src/instancer
+EnvironmentFile=/etc/dejavu-instancer.env
+ExecStart=/opt/ctf/DejaVu/src/instancer/instancer.py serve
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

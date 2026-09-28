@@ -1,0 +1,40 @@
+name: "Watashi No Gensokyo"
+category: Web Exploitation
+description: |-
+  Description blabla
+
+  https://www.youtube.com/watch?v=Ugc76QxNAlc
+
+  <img src="https://media.tenor.com/HMNqww7TGRUAAAAi/cirno-touhou.gif" alt="gif">
+  <img src="https://media.tenor.com/HMNqww7TGRUAAAAi/cirno-touhou.gif" alt="gif">
+  <img src="https://media.tenor.com/HMNqww7TGRUAAAAi/cirno-touhou.gif" alt="gif">
+  <img src="https://media.tenor.com/HMNqww7TGRUAAAAi/cirno-touhou.gif" alt="gif">
+  <img src="https://media.tenor.com/HMNqww7TGRUAAAAi/cirno-touhou.gif" alt="gif">
+
+  author: Auric
+
+  <a href="http://103.185.52.198:16711/">http://103.185.52.198:16711/</a>
+
+# connection_info: nc 103.185.52.198 123123
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 25
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - PETIR{touhou_is_life_a_fever_dream_of_danmaku_hell_where_reimu_casually_glides_through_impossible_bullet_curtains_marisa_steals_your_soul_with_master_spark_every_boss_theme_hijacks_your_brain_at_3am_and_gensokyo_becomes_home_as_you_dodge_pixel_perfection_patterns_with_pride_pain_and_absolute_devotion_to_the_art_of_not_getting_hit}
+
+tags:
+  - medium
+
+files:
+  - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

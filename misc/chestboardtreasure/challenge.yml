@@ -1,0 +1,33 @@
+name: "The Chest Boards Treasure"
+category: Misc
+description: |-
+  My friend redmito left a note what could it mean?
+
+  flag format = CSC{NAME_OF_WINNER_YEAR}
+  example flag : CSC{renko_varel_2025} all in lowercase letters
+
+  Author: Auric, Redmito
+
+# connection_info: 
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - CSC{frank_marshall_1912}
+
+files:
+ - dist/notes.txt
+
+tags:
+  - easy
+
+state: visible
+
+version: "0.1"

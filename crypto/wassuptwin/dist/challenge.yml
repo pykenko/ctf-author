@@ -1,0 +1,30 @@
+name: "wassup twin"
+category: Cryptography
+description: |-
+  こんにちは twin, 我创建了一个简单的 chall for you twin. The challenge is not 壊れた twin. Ok 안녕히 가세요 twin
+
+  author: Auric
+
+# connection_info: nc 31.97.187.222 123123
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - NCW{its_that_easy_twin}
+
+tags:
+  - easy
+
+files:
+  - dist/chall.zip
+
+state: hidden
+
+version: "0.1"

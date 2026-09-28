@@ -1,0 +1,10 @@
+[Unit]
+Description=Clean expired DejaVu CTF challenge instances
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/ctf/DejaVu/src/instancer
+EnvironmentFile=/etc/dejavu-instancer.env
+ExecStart=/opt/ctf/DejaVu/src/instancer/instancer.py cleanup

@@ -1,0 +1,3 @@
+Encoding is a way of converting data into a different format so it can be easily stored or transmitted. For example, Base64 encoding turns binary data into readable text using only printable characters. Encoding is not meant to hide information—anyone who knows the method can reverse it to get the original data back.
+
+WARNING Encoding is not safe to use as encryptions!!!

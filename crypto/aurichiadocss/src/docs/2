@@ -1,0 +1,1 @@
+Encryption is the process of converting data into a secret format to protect it from unauthorized access. It uses a key to transform the data (plaintext) into unreadable data (ciphertext), and only someone with the correct key can decrypt it back to the original form. Unlike encoding, encryption is designed specifically for security.

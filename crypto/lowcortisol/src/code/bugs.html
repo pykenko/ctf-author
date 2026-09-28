@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low Cortisol | Bug Reports</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">LC</div>
+        <div>
+          <p class="brand-title">Low Cortisol</p>
+          <p class="brand-sub">Low-cortisol data vaults for high-stakes teams</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Dashboard</a>
+        <a class="nav-link" href="monitor.html">Monitor Data</a>
+        <a class="nav-link active" href="bugs.html">Bug Reports</a>
+      </nav>
+      <div class="top-actions">
+        <button class="ghost" id="logoutBtn" hidden>Log out</button>
+      </div>
+    </header>
+
+    <section class="panel admin-panel" data-admin-shell hidden>
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Reports: OPEN</p>
+          <h2>Bug reports</h2>
+          <p class="lead">
+            Reporter shared the encryption logic and said: "I think this is vulnerable."
+          </p>
+        </div>
+        <span class="chip warning">Untriaged</span>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <h3>Incoming reports</h3>
+          <p>Security submissions received from external researchers.</p>
+        </div>
+      </div>
+
+      <div class="bug-report-list" id="bugReportList"></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="bgAudio" src="video.mp4" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>

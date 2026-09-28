@@ -1,0 +1,32 @@
+name: "World's end BLACKBOX"
+category: Reverse Engineering
+description: |-
+  "Think outside the BOX" 
+  
+  bonus free flag : 103.185.52.198:11671
+
+  author: Auric
+
+# connection_info: nc 103.185.52.198 123123
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 25
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - PETIR{https://www.youtube.com/watch?v=QSb6GN59VMw}
+
+tags:
+  - hard
+
+files:
+  - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

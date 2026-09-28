@@ -1,0 +1,23 @@
+services:
+  marisa:
+    build: ./marisa
+    image: marisa
+    container_name: marisa
+    ports:
+      - "16711:3000"
+    networks:
+      - shrine
+
+  reimu:
+    build: ./reimu
+    image: reimu-amd64
+    container_name: reimu
+    expose:
+      - "80"
+    networks:
+      - shrine
+
+
+networks:
+  shrine:
+    driver: bridge

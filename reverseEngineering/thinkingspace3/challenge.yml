@@ -1,0 +1,38 @@
+name: "Thinking Space 3"
+category: Reverse Engineering
+description: |-
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/CELNmHwln_c"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  
+  i really need space to think tbh its really hard for me to pick what kind of food i really wanna eat, but this binary contains the answer that i dont even know lmao but when i tried reversing its so gay me kenot pls help me.
+
+  author: Auric
+
+# connection_info: nc 31.97.187.222 123123
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - NCW{cimol_bojot_aa}
+
+tags:
+  - medium
+
+files:
+  - dist/chall
+
+state: hidden
+
+version: "0.1"

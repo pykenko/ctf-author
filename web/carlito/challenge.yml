@@ -1,0 +1,32 @@
+name: "carlito"
+category: Web Exploitation
+description: |-
+  Whos the boy?
+
+  author: Auric
+
+  <a href="http://103.185.52.198:8000/">http://103.185.52.198:8000/</a>
+
+# connection_info: nc 103.185.52.198 123123
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 25
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - PETIR{go_90_c4rl1t0_j9d1823}
+
+tags:
+  - easy
+
+files:
+  - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

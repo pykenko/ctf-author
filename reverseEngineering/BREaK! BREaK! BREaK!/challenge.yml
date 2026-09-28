@@ -1,0 +1,80 @@
+# Required sections
+name: "BREaK! BREaK! BREaK!"
+category: Reverse Engineering
+description: |-
+    <style>
+        #prism-video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .prism-video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .prism-video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #prism-author {
+            margin-top: 0.75em;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+    </style>
+
+    <div id="prism-video-container">
+        <div class="prism-video-wrapper">
+            <iframe
+                id="youtube-player"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MfYLyadcF1g?autoplay=1"
+                title="BREaK! BREaK! BREaK! / HiTECH NINJA vs Cranky"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p id="prism-author">Author: Auric</p>
+        <p>Flag format: <code>TECHFEST2026{.*}</code></p>
+        <p>Example: <code>TECHFEST2026{kimukatsuenak}</code></p>
+    </div>
+    
+value: 1000
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+    require_ai_source: true
+    require_solver: true
+
+hints: 
+
+flags:
+    # A static case sensitive flag
+    - TECHFEST2026{infombarmaimai}
+    
+tags:
+    - Easy
+
+files:
+    - dist/chall
+    - dist/output.ppm
+
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

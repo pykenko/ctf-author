@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low Cortisol | Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">LC</div>
+        <div>
+          <p class="brand-title">Low Cortisol</p>
+          <p class="brand-sub">Low-cortisol data vaults for high-stakes teams</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Dashboard</a>
+        <a class="nav-link" href="monitor.html">Monitor Data</a>
+        <a class="nav-link" href="bugs.html">Bug Reports</a>
+      </nav>
+      <div class="top-actions">
+        <button class="ghost" id="logoutBtn" hidden>Log out</button>
+      </div>
+    </header>
+
+    <section class="panel admin-panel" data-admin-shell hidden>
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Session: ACTIVE</p>
+          <h2>Admin Dashboard</h2>
+          <p class="lead">
+            Overview of encrypted exports, system health, and open security reports.
+          </p>
+          <video class="dashboard-video" muted autoplay loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="status-badge">
+          <span class="pulse"></span>
+          Verified operator
+        </div>
+      </div>
+
+      <div class="metric-grid">
+        <article class="metric-card">
+          <p class="metric-label">Vault exports</p>
+          <p class="metric-value" data-metric="vaults">--</p>
+          <p class="metric-sub">Active customer datasets</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Open bugs</p>
+          <p class="metric-value" data-metric="bugs">--</p>
+          <p class="metric-sub">Awaiting triage</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Key policy</p>
+          <p class="metric-value">LC-7</p>
+          <p class="metric-sub">Audited RSA flow</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Retention</p>
+          <p class="metric-value">30d</p>
+          <p class="metric-sub">Export window</p>
+        </article>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <h3>Quick actions</h3>
+          <p>Jump into monitoring or triage.</p>
+        </div>
+      </div>
+      <div class="action-grid">
+        <a class="action-card" href="monitor.html">
+          <p class="card-title">Monitor data exports</p>
+          <p class="card-sub">Inspect encrypted `e`, `n`, `c` for each customer vault.</p>
+        </a>
+        <a class="action-card" href="bugs.html">
+          <p class="card-title">Review bug reports</p>
+          <p class="card-sub">Security reports and encryption logic submissions.</p>
+        </a>
+      </div>
+
+      <div class="notice">
+        <div>
+          <p class="notice-title">Restricted vault</p>
+          <p class="notice-text">
+            Access is granted only through cryptographic recovery. No plaintext is
+            retained on this console.
+          </p>
+        </div>
+        <button class="ghost small" id="requestAccessBtn">Request access</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="bgAudio" src="video.mp4" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+name: "Aurichia-Doom"
+category: Cryptography
+description: |-
+  Why did you hack my docs?!
+  Im mad because you hacked my docs >:(
+  this time its my revenge, enjoy. >:)
+  
+  Author: Auric
+
+# connection_info: nc  16961
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - CSC{https://www.youtube.com/watch?v=M3pjFfKBonI&ab_channel=KosekiBijouCh.hololive-EN}
+
+tags:
+  - hard
+
+files:
+ - dist/chall.py
+ - dist/output.txt
+
+state: visible
+
+version: "0.1"

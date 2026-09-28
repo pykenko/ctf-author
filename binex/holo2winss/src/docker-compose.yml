@@ -1,0 +1,8 @@
+services:
+  holotowinss:
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "38932:38932"

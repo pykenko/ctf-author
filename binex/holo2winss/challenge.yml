@@ -1,0 +1,39 @@
+# Required sections
+name: "Holo2win"
+category: Binary Exploitation
+description: |-
+
+  You’ve finally been accepted into the most elite Hololive fanbase on the net. Everyone’s watching Biboo VODs, BAOBAOOO for Fuwamoco, and simping for Kronii like their lives depend on it. But there’s a secret tier—one only true believers can access.
+
+  Author: Auric
+
+
+##### TIDAK USAH DIGANTI
+value: 500
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+##### TIDAK USAH DIGANTI
+
+connection_info: nc 46.202.163.245 38932
+
+# hints:
+
+flags:
+    # A static case sensitive flag
+    - CSC{Kronii_took_my_time_Fuwawa_and_Mococo_turn_me_into_a_giggling_mess_Biboo_is_my_ultimate_hype!}
+
+tags:
+    - easy
+
+files:
+    - dist/chall
+
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

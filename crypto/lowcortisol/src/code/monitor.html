@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low Cortisol | Monitor Data</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">LC</div>
+        <div>
+          <p class="brand-title">Low Cortisol</p>
+          <p class="brand-sub">Low-cortisol data vaults for high-stakes teams</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Dashboard</a>
+        <a class="nav-link active" href="monitor.html">Monitor Data</a>
+        <a class="nav-link" href="bugs.html">Bug Reports</a>
+      </nav>
+      <div class="top-actions">
+        <button class="ghost" id="logoutBtn" hidden>Log out</button>
+      </div>
+    </header>
+
+    <section class="panel admin-panel" data-admin-shell hidden>
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Exports: LIVE</p>
+          <h2>Monitor data exports</h2>
+          <p class="lead">Customer vault exports expose only `e`, `n`, and `c`.</p>
+        </div>
+        <div class="status-badge">
+          <span class="pulse"></span>
+          Export feed healthy
+        </div>
+      </div>
+
+      <div class="notice">
+        <div>
+          <p class="notice-title">Restricted vault</p>
+          <p class="notice-text">
+            Access is granted only through cryptographic recovery. No plaintext is
+            retained on this console.
+          </p>
+        </div>
+        <button class="ghost small" id="requestAccessBtn">Request access</button>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <h3>Customer vault exports</h3>
+          <p>Each entry exposes only `e`, `n`, and `c` for audit.</p>
+        </div>
+        <div class="chips">
+          <span class="chip">Retention: 30d</span>
+          <span class="chip">Key policy: LC-7</span>
+        </div>
+      </div>
+
+      <div class="dataset-grid" id="datasetList"></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="bgAudio" src="video.mp4" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>

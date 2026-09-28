@@ -1,0 +1,42 @@
+name: "Sigma Checker"
+category: Reverse Engineering
+description: |-
+  99.8% LOADED
+  [ERROR] Vault integrity compromised
+  [ALERT] Sigma core unstable
+
+  only the true GIGARIZZLER can vibe-check the vault
+
+  crack the code, inject the drip, unlock the vault
+  one wrong move = instant de-swagification
+
+  do you have the W-energy to sigma-sync with the payload?
+
+  or are you just another beta.exe?
+
+
+  Author: Auric
+
+# connection_info: 
+
+##### DON'T CHANGE
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - CSC{Hello_hope_you_enjoy+have_fun!!!_also_check_the_youtube_vid}
+
+tags:
+  - easy
+
+files:
+ - dist/chall
+
+state: visible
+
+version: "0.1"

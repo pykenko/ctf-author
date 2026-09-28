@@ -1,0 +1,29 @@
+services:
+  instancer:
+    build: ./instancer
+    restart: unless-stopped
+    ports:
+      - "${INSTANCER_BIND:-0.0.0.0}:${INSTANCER_PORT:-9000}:9000"
+    environment:
+      CTFD_BASE_URL: "${CTFD_BASE_URL:-http://103.185.52.173/}"
+      INSTANCE_HOST: "${INSTANCE_HOST:-103.152.242.110}"
+      PUBLIC_SCHEME: "${PUBLIC_SCHEME:-http}"
+      INSTANCER_HOST: "0.0.0.0"
+      INSTANCER_PORT: "9000"
+      INSTANCER_ADMIN_TOKEN: "${INSTANCER_ADMIN_TOKEN:?INSTANCER_ADMIN_TOKEN must be set}"
+      PORT_MIN: "${PORT_MIN:-20000}"
+      PORT_MAX: "${PORT_MAX:-30000}"
+      INSTANCE_TTL_SECONDS: "${INSTANCE_TTL_SECONDS:-1200}"
+      MAX_INSTANCE_TTL_SECONDS: "${MAX_INSTANCE_TTL_SECONDS:-1200}"
+      CLEANUP_INTERVAL_SECONDS: "${CLEANUP_INTERVAL_SECONDS:-60}"
+      REQUIRE_TEAM: "${REQUIRE_TEAM:-1}"
+      DEJAVU_COMPOSE_DIR: "/challenge-src"
+      DEJAVU_STATE_DIR: "/state"
+      COMPOSE_BUILD: "${COMPOSE_BUILD:-1}"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/challenge-src:ro
+      - instancer_state:/state
+
+volumes:
+  instancer_state:

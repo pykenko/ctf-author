@@ -1,0 +1,1 @@
+RSA is a widely used encryption system based on mathematics, specifically prime numbers and modular arithmetic. It uses a pair of keys: a public key for encrypting messages and a private key for decrypting them. RSA is secure because factoring large numbers (which is needed to break the encryption) is extremely difficult with current technology.

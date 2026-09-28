@@ -1,0 +1,1 @@
+cd /home/ctf/ && /home/ctf/chall

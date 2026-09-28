@@ -1,0 +1,13 @@
+services:
+  highcortisol:
+    image: highcortisol
+    build: .
+    restart: always
+    mem_limit: 128m
+    cpus: 0.25
+    environment:
+      - TERM=xterm
+    ports:
+      - "61452:80"
+    volumes:
+      - ./code:/var/www/html:ro

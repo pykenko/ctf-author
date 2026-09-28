@@ -1,0 +1,8 @@
+services:
+  aurichiadocsnew:
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "16961:16961"
